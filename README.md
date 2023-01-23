@@ -12,3 +12,14 @@ datasetDir: ADE20K dataset path
 Use demo.ipynb to visualize if it works\
 ![image](./figure/door1.png)\
 ![image](./figure/wall1.png)\
+
+
+## Citation
+```
+@misc{
+    title  = {ADE20K_To_COCO},
+    author = {Tracy Huang},
+    url    = {https://github.com/macTracyHuang/ADE20K_To_COCO},
+    year   = {2023}
+}
+```
