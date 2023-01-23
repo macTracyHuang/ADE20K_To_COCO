@@ -3,7 +3,7 @@ This tool can convert neweast [ADE20K dataset](https://groups.csail.mit.edu/visi
 As my goal is to build a object level SLAM system, this tool is designed to retrieve information related to target objects.
 However, you can always modify it to fit your purposes, and Welcome to pull a request.
 
-Please :star: the report when you find it useful :full_moon_with_face:
+Please :star: the repo if you find it useful :full_moon_with_face:
 
 
 ## Variables
