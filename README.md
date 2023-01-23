@@ -9,6 +9,6 @@ pklPath: the path to index_ade20k.pkl provied by ADE20K\
 datasetDir: ADE20K dataset path
 
 ## Test Result
-Use demo.ipynb to visualize if it works
-![image](./figure/door1.png)
-![image](./figure/wall1.png)
+Use demo.ipynb to visualize if it works\
+![image](./figure/door1.png)\
+![image](./figure/wall1.png)\
