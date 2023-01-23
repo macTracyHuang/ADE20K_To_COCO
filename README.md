@@ -1,7 +1,10 @@
 # ADE20K_To_COCO
 This tool can convert neweast [ADE20K dataset](https://groups.csail.mit.edu/vision/datasets/ADE20K/) to COCO format, which can be futher used in Detectron2 Framework.
-As my goal is to build a object level SLAM system, this tool is designed to retrieve information realted to target objects.
+As my goal is to build a object level SLAM system, this tool is designed to retrieve information related to target objects.
 However, you can always modify it to fit your purposes, and Welcome to pull a request.
+
+Please :star: the report when you find it useful :full_moon_with_face:
+
 
 ## Variables
 objectNames: Name of target objects, ex: ["door", "door frame"]\
