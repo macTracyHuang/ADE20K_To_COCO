@@ -54,7 +54,7 @@ class AdeToCOCO():
         self.statics = pickleload(pklPath)
         self.datasetDir = datasetDir
         self.objectNames = objectNames
-        self.annId = 1  # annotation id start from 1
+        self.annId = 1
 
     def getObjectIdbyName(self, name):
         """Get object id by object name
@@ -114,8 +114,14 @@ class AdeToCOCO():
         assert path.exists(), f"Image information json file not exist"
         return str(path)
 
-    # return coco annotation format
     def generateAnnotations(self, imageId, imageInfo):
+        """ Generate annotations for a single image in COCO format
+        Args:
+            imageId (int): image id
+            imageInfo (dict): image information
+        Returns:
+            annotations (list): list of annotations
+        """
         objects = imageInfo["object"]
 
         annotations = []
@@ -168,8 +174,15 @@ class AdeToCOCO():
             self.annId += 1
         return annotations
 
-    # return coco image format
     def generateImage(self, imageId, imagePath, imageInfo):
+        """ Generate image information for a single image in COCO format
+        Args:
+            imageId (int): image id
+            imagePath (str): image path
+            imageInfo (dict): image information in ADE20K format
+        Returns:
+            image (dict): image information in COCO format
+        """
         image = {"id": int, "file_name": str, "width": int, "height": int}
         image["id"] = int(imageId)
         image["file_name"] = imagePath
@@ -246,6 +259,10 @@ class AdeToCOCO():
 class DemoTest():
 
     def __init__(self, datasetDir):
+        """ A class to run demo to check the converted COCO format
+        Args:
+            datasetDir (str): path to the ADE20K dataset directory
+        """
         self.datasetDir = datasetDir
 
     def startDemo(self):
